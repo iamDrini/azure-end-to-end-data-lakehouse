@@ -4,6 +4,8 @@ This repository demonstrates an end-to-end cloud data pipeline that migrates on-
 
 ## Project Architecture
 
+![Project Architecture](architecture.png)
+
 The pipeline follows a multi-layered approach to ingest, process, and serve data:
 
 1.  **Data Ingestion**: Data from an on-premises SQL Server database (specifically, the `SalesLT` schema) is first extracted and landed in a `bronze` container within Azure Data Lake Storage (ADLS) Gen2. This raw data is stored in Parquet format.
